@@ -124,7 +124,7 @@ struct NoteCardView: View {
 struct FooterView: View {
     var body: some View {
         HStack {
-            Text("⌘V to paste • Click outside to close")
+            Text("⌘V to paste • ⌘C to copy")
                 .font(.system(size: 10, design: .rounded))
                 .foregroundColor(.secondary)
             
