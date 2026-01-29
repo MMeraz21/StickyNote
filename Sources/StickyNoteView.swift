@@ -14,7 +14,7 @@ struct StickyNoteView: View {
             // Footer
             FooterView()
         }
-        .frame(width: 320, height: 400)
+        .frame(minWidth: 200, minHeight: 150)
         .background(Color(NSColor.windowBackgroundColor))
     }
 }

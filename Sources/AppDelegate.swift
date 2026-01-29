@@ -46,10 +46,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func setupPanel() {
-        // Create a floating panel
+        // Create a floating panel with resizable style
         panel = NSPanel(
             contentRect: NSRect(x: 0, y: 0, width: 320, height: 400),
-            styleMask: [.nonactivatingPanel, .titled, .closable, .fullSizeContentView],
+            styleMask: [.nonactivatingPanel, .titled, .closable, .resizable, .fullSizeContentView],
             backing: .buffered,
             defer: false
         )
@@ -63,6 +63,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         panel.backgroundColor = NSColor.windowBackgroundColor
         panel.isOpaque = false
         panel.hasShadow = true
+        
+        // Set min/max sizes
+        panel.minSize = NSSize(width: 200, height: 150)
+        panel.maxSize = NSSize(width: 800, height: 1000)
         
         // Round the corners
         panel.contentView?.wantsLayer = true
