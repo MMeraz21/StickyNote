@@ -1,0 +1,1 @@
+Built this because I was tired of having to copy and paste fields into job applications that should've been parsed from my resume
