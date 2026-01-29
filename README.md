@@ -16,19 +16,26 @@ A minimal macOS menu bar app for keeping important strings handy. Built because 
 
 ## Installation
 
-### Option 1: Build from source
+### Option 1: Homebrew (recommended)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/StickyNote.git
+brew tap MMeraz21/tap
+brew install --cask stickynote
+```
+
+### Option 2: Download from Releases
+
+Download the latest `.zip` from [Releases](https://github.com/MMeraz21/StickyNote/releases), unzip, and drag to Applications.
+
+> **Note:** Since the app isn't code-signed, you'll need to right-click → Open the first time.
+
+### Option 3: Build from source
+
+```bash
+git clone https://github.com/MMeraz21/StickyNote.git
 cd StickyNote
 ./build.sh
 cp -r StickyNote.app /Applications/
-```
-
-### Option 2: Run directly (for development)
-
-```bash
-swift run
 ```
 
 ## Usage
