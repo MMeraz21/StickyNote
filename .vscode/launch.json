@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:StickyNote}",
+            "name": "Debug StickyNote",
+            "program": "${workspaceFolder:StickyNote}/.build/debug/StickyNote",
+            "preLaunchTask": "swift: Build Debug StickyNote"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:StickyNote}",
+            "name": "Release StickyNote",
+            "program": "${workspaceFolder:StickyNote}/.build/release/StickyNote",
+            "preLaunchTask": "swift: Build Release StickyNote"
+        }
+    ]
+}
