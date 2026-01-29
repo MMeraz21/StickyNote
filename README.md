@@ -27,7 +27,10 @@ brew install --cask stickynote
 
 Download the latest `.zip` from [Releases](https://github.com/MMeraz21/StickyNote/releases), unzip, and drag to Applications.
 
-> **Note:** Since the app isn't code-signed, you'll need to right-click → Open the first time.
+> **Note:** Since the app isn't code-signed, macOS will block it. After copying to Applications, run:
+> ```bash
+> xattr -cr /Applications/StickyNote.app
+> ```
 
 ### Option 3: Build from source
 
